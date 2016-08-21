@@ -1,0 +1,68 @@
+
+  <!DOCTYPE html>
+<html>
+  <head>
+      <% include partials/templates/head.ejs %>
+   </head>   
+  <body>
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <% include partials/templates/header.ejs %>
+    </nav>
+   <div id="tf-home" class="text-center">
+      <div class="overlay">
+        <div class="content">
+          <h1>Welcome to <strong><span class="color">Ride-On</span></strong></h1>
+          <p class="lead">Come ride with us and save <strong>Money, Environment &amp; Time</strong></p>
+                <!--<a href="#tf-about" class="fa fa-angle-down page-scroll"></a>-->
+          <div class="cotn_principal">
+            <div class="cont_centrar">
+              <div class="cont_login">
+                <div class="cont_info_log_sign_up">
+                  <div class="col_md_login">
+                    <h2>LOGIN</h2>  
+                    <p>Login to view available rides or post!</p> 
+                    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                  </div>
+                  <div class="col_md_sign_up">
+                    <h2>SIGN UP</h2>
+                    <p>Sign up here to enjoy all features! </p>
+                    <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                  </div>
+                </div>
+                <div class="cont_back_info">
+                  <div class="cont_img_back_grey">
+                  <img src="http://ride.news/wp-content/uploads/2015/11/rideshare.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cont_forms" >
+                <div class="cont_img_back_">
+                  <img src="http://ride.news/wp-content/uploads/2015/11/rideshare.jpg" alt="" />
+                </div>
+                <div class="cont_form_login">
+                  <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+                  <h2>LOGIN</h2>
+                  <input type="text" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                </div>
+                <div class="cont_form_sign_up">
+                  <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                  <h2>SIGN UP</h2>
+                  <input type="text" placeholder="Email" />
+<!--<input type="text" placeholder="User" />-->
+                  <input type="password" placeholder="Password" />
+                  <input type="password" placeholder="Confirm Password" />
+                  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+  <% include partials/templates/footer.ejs %>
+</body>
+</html>
+   
+      
